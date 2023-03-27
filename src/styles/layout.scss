@@ -1,0 +1,42 @@
+.large_margin {
+    display: block;
+    margin: 2rem 0rem;
+}
+.medium_margin {
+    display: block;
+    margin: 1rem 0rem;
+}
+
+.center_column {
+    @include flex-center;
+    flex-direction: column;
+}
+.center_row {
+    @include flex-center;
+    flex-direction: row;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    grid-template-areas: "ilustration content";
+    height: 100vh;
+}
+.content {
+    grid-area: content;
+    padding: 1.5rem 6rem;
+    overflow-y: auto;
+  }
+
+  .ilustration {
+    @include flex-center;
+    max-height: 100vh;
+    grid-area: ilustration;
+    background-color: #FFE6C9;
+  
+    img {
+      max-width: 70%;
+      max-height: 70%;
+      object-position: center;
+      object-fit: contain;
+   }
+  }

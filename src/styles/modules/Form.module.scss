@@ -1,0 +1,47 @@
+@import '../mixins.scss';
+@import '../layout.scss';
+
+.input {
+@include button-and-input-aspect;
+width: 100%;
+padding: 0.8rem;
+}
+.input::placeholder {
+    color: var(--light-gray);
+}
+
+.input_label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--gray);
+}
+.input_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    a{
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+}
+
+
+.submit_button {
+    @include button-and-input-aspect;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.8rem;
+    font-weight: bold;
+    width: 100%;
+}
+.form_group {
+    width: 100%;
+    display: block;
+    margin-top: 1.5rem;
+}
+.form {
+
+}

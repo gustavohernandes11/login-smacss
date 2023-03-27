@@ -1,0 +1,48 @@
+@import '../mixins.scss';
+@import '../layout.scss';
+
+
+
+
+
+.title {
+  font-weight: 400px;
+  font-size: 2rem;
+}
+.subtitle {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.signWithGoogle {
+  @include flex-center;
+  @include button-and-input-aspect;
+  
+  width: 100%;
+  color: var(--gray);
+  gap: 0.5rem;
+  font-weight: bold;
+}
+.secondary_text {
+  color: var(--gray);
+  font-size: 0.8rem;
+}
+
+// Mobile
+@media (max-width: 700px) {
+  .content {
+  }
+
+  .grid {
+    
+  }
+
+}
+
+// Tablet and Smaller Desktop
+@media (min-width: 701px) and (max-width: 1120px) {
+  .grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+

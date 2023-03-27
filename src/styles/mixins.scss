@@ -1,0 +1,13 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+@mixin button-and-input-aspect {
+  border: 1px solid #E8E8E8;
+  padding: 0.5rem;
+  flex-direction: row;
+  background-color: var(--background);
+  border-radius: 0.25rem;
+}
