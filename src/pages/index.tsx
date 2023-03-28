@@ -27,10 +27,13 @@ export default function Home() {
             <p className={styles.subtitle}>See what is going on with your business</p>
           </span>
           <SignWithGoogle />
-          <span className={`${styles.center_row}  ${styles.large_margin}`}>
+          <span className={`${styles.center_row}  ${styles.large_margin}`} >
             <p className={styles.secondary_text}>------------- or Sign in with Email ------------- </p>
           </span>
           <SignInForm />
+          <span className={styles.center_row}>
+            <p>Not Registered Yet? <a href="http://">Create an Account</a> </p>
+          </span>
 
         </div>
       </main>

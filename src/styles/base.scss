@@ -33,3 +33,25 @@ a {
 
 }
 }
+
+// adjust rem to the viewport
+html,
+body,
+button,
+textarea,
+input {
+  font-family: 'Ubuntu', sans-serif;
+  @media (max-width: 768px) {
+    font-size: 93.75%;
+  }
+  @media (max-width: 425px) {
+    font-size: 87.50%;
+  }
+}
+
+a:hover {
+  text-decoration: underline;
+}
+button:hover {
+  cursor: pointer;
+}

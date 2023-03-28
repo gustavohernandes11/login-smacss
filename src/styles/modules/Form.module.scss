@@ -21,7 +21,10 @@ padding: 0.8rem;
     justify-content: space-between;
     align-items: center;
 
-    
+    input[type="checkbox"] {
+        margin-right: 0.5rem;
+    }
+
     a{
         font-size: 0.8rem;
         font-weight: 600;
@@ -42,6 +45,4 @@ padding: 0.8rem;
     display: block;
     margin-top: 1.5rem;
 }
-.form {
 
-}

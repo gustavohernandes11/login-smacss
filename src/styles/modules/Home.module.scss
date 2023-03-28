@@ -1,5 +1,6 @@
 @import '../mixins.scss';
 @import '../layout.scss';
+@import '../status.scss';
 
 
 
@@ -26,23 +27,4 @@
   color: var(--gray);
   font-size: 0.8rem;
 }
-
-// Mobile
-@media (max-width: 700px) {
-  .content {
-  }
-
-  .grid {
-    
-  }
-
-}
-
-// Tablet and Smaller Desktop
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
-  }
-}
-
 
